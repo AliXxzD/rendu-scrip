@@ -1,0 +1,17 @@
+# Script d’Hébergement (IaaS Simulation)
+
+## Présentation
+
+Ce script (`setup.sh`) est conçu pour automatiser l’hébergement d’une **application Node.js** ou d’un **site HTML** sur un **VPS Ubuntu** (IaaS). Il effectue notamment :
+
+1. La **mise à jour du système**.
+2. L’**installation des dépendances** (Node.js, npm, Git).  
+3. La **création ou le clonage** d’une application dans `/var/www/monapp`.
+4. (Optionnel) La **configuration d’un service systemd** pour un démarrage automatique.
+
+## Utilisation
+
+1. **Copier** le fichier `setup.sh` sur votre VPS (par exemple via SCP ou Git).
+2. Donner les droits d’exécution :
+   ```bash
+   chmod +x setup.sh
